@@ -21,11 +21,12 @@
   margin: 0 auto;
 }
 .con_pd {
-  padding: calc(var(--base-unit) * 3) 0;
+  padding: calc(var(--base-unit)*3) 0;
 }
 .con_top_pd {
-  padding-top: calc(var(--base-unit) * 3) 0;
+  padding-top: calc(var(--base-unit)*3);
 }
+
 /* 제목 위계 */
 body {
   /* font-family: 'Open Sans', sans-serif;
@@ -36,7 +37,9 @@ body {
 }
 .banner_tt {
   font-size: 55px;
-  line-height: calc(var(--base-unit) * 2);
+  line-height: calc(var(--base-unit)*2);
+  text-transform: uppercase;
+  color: #3a99d8;
 }
 .content_tt {
   font-size: 32px;
@@ -91,4 +94,54 @@ body > header {
 body > header > div {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
+body > header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+body > header nav ul li:first-child {
+  margin-right: 70px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  color:var(--light-text-c);
+  word-spacing: 7px;
+}
+body > header nav ul li:first-child a {
+  color:var(--text-c);
+}
+/* [옛날 방식] 
+  body > header h1 a { 
+  background-image: url(../images/Logo.png);
+  width: 161px;
+  height: 54px;
+  text-indent: 100%;
+  overflow: hidden;
+  display: block;
+} */
+body > header h1 a span {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+/* before/after로 만든 요소는 inline이기 때문에 크기가 없음 */
+body > header h1 a:before {
+  content: '';
+  /* background-image: url(../images/Logo.png);
+  background-repeat: no-repeat; */
+  background: url(../images/Logo.png) no-repeat;
+  width: 161px;
+  height: 54px;
+  display: block;
+}
+
+.banner {
+  text-align: center;
+  background-color: var(--banner-c);
+}
+
+
