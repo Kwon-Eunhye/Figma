@@ -1,0 +1,68 @@
+<!-- 문서 선언 : html:5 tag 해석 -->
+<!DOCTYPE html>
+<!-- 언어 -->
+<html lang="en">
+  <!-- 페이지의 부가 설명 -->
+  <head>
+    <meta charset="UTF-8" />
+    <!-- content="IE=edge" 인터넷 익스플로러에서 가장 최신버전만 사용하도록 설정 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In Page - ACME</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@40,400,1,0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0"
+    />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/sign.css" />
+  </head>
+
+  <body class="sign">
+    <header>
+      <div class="container">
+        <h1><a href=""><span>Acme</span></a></h1>
+      </div>
+    </header>
+    <section class="banner con_pd">
+      <h2 class="banner_tt">Create ypur free account</h2>
+      <form action="#" method="POST">
+        <p>
+          <label for="username">
+            <span class="material-symbols-outlined">person</span>
+          </label>
+          <input type="text" id="username" placeholder="Name">
+        </p>
+        <p>
+          <label for="useremail">
+            <span class="material-symbols-outlined">mail</span>
+          </label>
+          <input type="email" id="useremail" placeholder="Useremail">
+        </p>
+        <p>
+          <label for="userpw">
+            <span class="material-symbols-outlined">lock</span>
+          </label>
+          <input type="password" id="userpw" placeholder="Password">
+        </p>
+        <p>
+          <label for="userpwcf">
+            <span class="material-symbols-outlined">lock</span>
+          </label>
+          <input type="password" id="userpwcf" placeholder="Password Confirm">
+        </p>
+        <p>
+          <input type="submit" value="create account">
+        </p>
+        <div class="feedback">
+          <p>Oops, it seems you haven't entered your name yet.</p>
+          <p>This is required.</p>
+        </div>
+      </form>
+    </section>
+    <!-- <div class="box"></div> -->
+    <footer>
+      <a href="" class="link">Already have an account? sign in</a>
+    </footer>
+  </body>
+</html>
