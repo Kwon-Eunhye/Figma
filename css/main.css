@@ -75,4 +75,22 @@
   .testimonial {
     width: 696px;
   }
+  .banner img {
+    height: calc(var(--base-unit)*6);
+  }
 }
+@media (max-width: 480px) {
+  
+  .banner_tt {
+    font-size: 40px;
+  }
+  .banner .content_tt {
+    margin-top: 0;
+  }
+  .content_tt {
+    font-size: 20px;
+  }
+
+}
+
+

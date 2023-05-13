@@ -46,7 +46,7 @@
         <h1>
           <a href="index.html"><span>Acme</span></a>
         </h1>
-        <nav>
+        <nav class="mobilemenu">
           <ul>
             <li>
               <a href="index.html">home</a> / <a href="about.html">about</a>
@@ -65,7 +65,13 @@
           </ul>
         </nav>
       </div>
+      <div class="menubutton">
+        <a href="">
+          <span class="material-symbols-outlined">menu</span>
+        </a>
+      </div>
     </header>
+    
     <section class="banner con_top_pd">
       <h2 class="banner_tt">portfolio manager</h2>
       <h3 class="content_tt">It's awesome. And it's FREE!</h3>
@@ -181,4 +187,19 @@
       </div>
     </footer>
   </body>
+  <script>
+    const menubutton = document.querySelector('.menubutton');
+    const mobilemenu = document.querySelector('.mobilemenu');
+
+    menubutton.addEventListener('click', function (event) {
+      event.preventDefault();
+
+      if (mobilemenu.style.display === "none") {
+        mobilemenu.style.display = "block";
+      } else {
+        mobilemenu.style.display = "none";
+      }
+    });
+  </script>
+ 
 </html>

@@ -128,7 +128,7 @@ table {
   border-spacing: 0;
 }
 a {
-  text-decoration: nones;
+  text-decoration: none;
   color: #000000;
 }
 /* inline-block의 요소들은 밑에 공백이 생기기 때문에 없애기 위해 설정 */
