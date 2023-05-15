@@ -32,6 +32,7 @@ hr {
   /* border-top: 1px solid var(--light-c); */
   height: 1px;
   background-color: var(--light-c);
+  margin: 0;
 }
 /* 제목 위계 */
 body {
@@ -131,6 +132,7 @@ body > header nav ul li:first-child {
   font-weight: bold;
   color: var(--light-text-c);
   word-spacing: 2px;
+  margin-right: 70px;
 }
 body > header nav ul li:first-child a {
   color: var(--text-c);
@@ -202,7 +204,7 @@ footer .copyright p + p {
   right: calc(100% + 20px);
 }
 .slidewrapper .next-btn {
-  left: calc(100% + 10px);
+  left: calc(100% + 20px);
 }
 
 @media (max-width: 768px) {
@@ -232,6 +234,10 @@ footer .copyright p + p {
   body>header nav ul {
     gap: 23px;
   }
+  body > header nav ul li:first-child {
+    word-spacing: 0;
+    margin-right: 0px;
+  }
   .btn span {
     font-size: 14px;
   }
@@ -250,8 +256,6 @@ footer .copyright p + p {
     color: #000;
     z-index: 999;
   }
-  
-
 }
 
 
